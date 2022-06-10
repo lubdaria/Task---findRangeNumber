@@ -1,6 +1,6 @@
 // Вивести діапазон чисел   
 
-let number = prompt('Enter two number', '16');
+let number = prompt('Enter two number', '1 6');
 
 let arrayNumbers = searchArrayNumbers(number);
 checkValidation(arrayNumbers);
@@ -10,15 +10,14 @@ function searchArrayNumbers(number) {
   const arrayNumber = [];
     
   for(let i = 0; i < number.length; i++){
-    let point = number[i];
-
-    if (Number(point)){
-      arrayNumber.push(Number(point));
+    if (Number(number[i])){
+      arrayNumber.push(Number(number[i]));
     }
     else {
       continue;
     }
   }
+  
   return arrayNumber;
 }
 
